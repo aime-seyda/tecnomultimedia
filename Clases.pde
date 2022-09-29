@@ -17,22 +17,6 @@ class Cielo {
 
 
 
-class Cola {
-  PImage co;
-  float px;
-  int py;
-  Cola() {
-    co = loadImage("cola.png");
-  }
-  void dibujarCola(float x, int y) {
-    this.px = x;
-    this.py = y;
-    image(co, x, y);
-    translate(x, y);
-  }
-}
-
-
 class Barrilete {
   PImage ba;
   float px;
@@ -55,6 +39,23 @@ class Barrilete {
     if (tecla == RIGHT) {
       px += 15;
     }
+  }
+}
+
+
+
+class Cola {
+  PImage co;
+  float px;
+  int py;
+  Cola() {
+    co = loadImage("cola.png");
+  }
+  void dibujarCola(float x, int y) {
+    this.px = x;
+    this.py = y;
+    image(co, x, y);
+    translate(x, y);
   }
 }
 
